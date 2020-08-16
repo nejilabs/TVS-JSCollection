@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TVS-2016-JS</title>
+  <link rel="stylesheet" href="style.css" / />
+</head>
+
+<body>
+  <div class="header">
+    <h1>Learning Javascript</h1>
+    <p>TVS-2016-JS</p>
+  </div>
+
+  <div class="container">
+    <form name="form" method="post" onsubmit="validateForm()">
+
+      <label>First Name: </label><input name="firstName" id="firstName" type="text" /><br />
+      <label>Last Name: </label><input name="lastName" id="lastName" type="text" /></br />
+      <select name="background" id="background" onchange="changeBackground(this)">
+        <option value="">Pick a Color-----</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select><br />
+
+      </br />
+
+      <input type="submit" value="Submit" onsubmit="validateForm()" />
+    </form>
+
+    <p id="displayName"></p>
+  </div>
+
+</body>
+<script src="index.js"></script>
+
+
+</html>
